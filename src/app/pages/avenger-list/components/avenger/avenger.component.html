@@ -1,0 +1,16 @@
+<div
+  class="avenger"
+  *ngIf="avenger"
+  (click)="onClick()"
+  [ngClass]="{
+    'avenger--active': isSelected
+  }"
+>
+  <img class="avenger__image" [src]="avenger.img" />
+  <a class="avenger__info" [href]="avenger.link"> +Info</a>
+  <p class="avenger__hero">{{ avenger.hero }}</p>
+  <p class="avenger__name">{{ avenger.name }}</p>
+  <button class="avenger__delete" *ngIf="canDelete" (click)="onDelete()">
+    Delete
+  </button>
+</div>

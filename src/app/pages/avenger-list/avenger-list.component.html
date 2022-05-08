@@ -1,0 +1,13 @@
+<button class="button" (click)="onModify()">
+  {{ canModify ? "Stop" : "Select" }}
+</button>
+<input class="input" [(ngModel)]="filterValue" (change)="onFilter()" />
+<div class="avenger-list">
+  <app-avenger
+    class="avenger"
+    *ngFor="let avenger of filteredAvengers"
+    [avenger]="avenger"
+    [canDelete]="canModify"
+    (delete)="onDelete(avenger.hero)"
+  ></app-avenger>
+</div>

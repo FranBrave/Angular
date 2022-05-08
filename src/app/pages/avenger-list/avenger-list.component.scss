@@ -1,0 +1,31 @@
+.avenger-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 24px;
+    justify-content: center;
+}
+
+.div p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.button {
+    background-color: #0c145d7a;
+    color: #252628;
+    width: 100px;
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.input {
+    padding: 0.8rem 1rem;
+    margin: 0.3rem;
+    border: solid 1px rgb(21, 8, 82);
+    border-radius: 6px;
+    color: #0c0324;
+    font-size: 1rem;
+  }
